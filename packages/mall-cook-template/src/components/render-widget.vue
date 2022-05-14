@@ -90,6 +90,15 @@
       :noticeContent="item.noticeContent"
     ></McNotice>
 
+    <McContainer
+      v-if="item.component == 'McContainer'"
+      :id="'widget' + item.id"
+      :key="item.id"
+      :widgetId="item.id"
+      :attrs="item.attrs"
+      :list="item.components.list"
+    ></McContainer>
+
     <waiting-cmp
       v-if="item.component == 'waiting'"
       :id="'widget' + item.id"

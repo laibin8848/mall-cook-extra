@@ -1,0 +1,32 @@
+{
+ "name": "自定义容器",
+ "icon":"icon-line",
+ "fields": {
+    "attrs": {
+      "label": "容器基本信息",
+      "type": "object",
+      "child": {
+        "conHeight": {
+          "label": "容器高度",
+          "type": "number",
+          "options": {
+            "max": 1000
+          },
+          "value": 100
+        },
+        "conBackground": {
+          "label": "背景色",
+          "type": "color",
+          "value": ""
+        }
+      }
+    },
+    "components": {
+      "label": "",
+      "type": "container",
+      "value": {
+        "list": []
+      }
+    }
+ }
+}

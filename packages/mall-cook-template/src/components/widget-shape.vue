@@ -40,7 +40,7 @@ export default {
     right: 0;
     bottom: 0;
     border: dashed 1px #155bd4;
-    z-index: 100;
+    // z-index: 100;
   }
 
   .shape-solid {
@@ -50,7 +50,7 @@ export default {
     right: 0;
     bottom: 0;
     border: solid 1px #155bd4;
-    z-index: 100;
+    // z-index: 100;
   }
 }
 </style>

@@ -1,105 +1,12 @@
-<!--
- * @Description: What's this for
- * @Autor: WangYuan
- * @Date: 2021-12-20 14:20:57
- * @LastEditors: WangYuan
- * @LastEditTime: 2022-04-24 09:14:25
--->
-<!-- [English](./README.md) | 简体中文  -->
+## 开发缘由
 
-<p align="center">
-  <img src="./static/logo.jpg" />
-</p>
-<p align="center">
- <img style='margin:0 5px' src='https://badgen.net/github/stars/wangyuan389/mall-cook'>
- <img style='margin:0 5px' src='https://badgen.net/github/forks/wangyuan389/mall-cook'>
- <img style='margin:0 5px' src='https://img.shields.io/badge/version-1.1.1-686480.svg'>
- <img style='margin:0 5px' src='https://img.shields.io/badge/code%20style-standard-7986d0.svg'>
+<p>
+  最近在使用作者的mall-cook开源项目，发现其欠缺小程序项目海报，活动页自由布局的功能。于是对其进行了简单的扩展，希望可以给其他有需要小伙伴提供一个解决方案，也希望其他小伙伴如果有更好的思路也可以跟我联系分享~
 </p>
 
-<p align="center">
-  SaaS商城平台，通过可视化搭建商城，支持生成H5、小程序多端商城项目
-</p>
+## 扩展功能
+<figcaption style="margin-top: 10px;margin-bottom: 10px; text-align: center; color: #888; font-size: 14px;">容器功能演示</figcaption>
+<img src="./static/mc-container.gif" alt style="display: block; margin: 0 auto; max-width: 100%;">
 
-<p align="center">
-  我前端基建梦想的一小步
-</p>
-
-## 介绍
-
-Mall-Cook 是一个基于 vue 开发的可视化商城搭建平台，包括多页面可视化构建、Json Schema 生成器（可视化搭建物料控制面板），实现组件流水线式标准接入平台。最新版本使用 uni-app 重构物料、模板项目，支持生成 H5、小程序多端商城。
-
-## 1.1 uni-app 版本上线
-
-- 支持构建 H5、微信小程序多端商城
-- 利用 uni-app 重构物料库与模板项目
-- 修改为 Monorepo 风格项目结构，支持多个子项目独立存在
-
-## 1.2 增加 service 子项目
-
-- 后端使用 node 开发，mall-cook-service 项目已公布
-
-## 1.3 支持自定义页面 tab 页面设置与跳转
-
-- 构建自定义页面可在 tabbar 设置为 tab 页
-- 支持物料固定页、自定义页面、tab 自定义页面，全类型页面跳转
-
-## 1.3.1 新增文档
-
-- 新增文档项目
-
-## 体验
-
-<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">平台地址：<a href="http://110.42.184.128:8000/#/login" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">传送门</a></p>
-
-## 文档
-<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">文档地址：<a href="http://110.42.184.128:7000/" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">传送门</a></p>
-
-## 平台速览
-<figcaption style="margin-top: 10px;margin-bottom: 10px; text-align: center; color: #888; font-size: 14px;">项目可视化搭建</figcaption>
-<img src="./static/MallCook-Build.gif" alt style="display: block; margin: 0 auto; max-width: 100%;">
-
-<figcaption style="margin-top: 10px;margin-bottom: 10px; text-align: center; color: #888; font-size: 14px;">页面使用魔方物料</figcaption>
-<img src="./static/MallCook-Cube.gif" alt style="display: block; margin: 0 auto; max-width: 100%;">
-
-<figcaption style="margin-top: 10px;margin-bottom: 10px; text-align: center; color: #888; font-size: 14px;">页面使用商品物料</figcaption>
-<img src="./static/MallCook-Goods.gif" alt style="display: block; margin: 0 auto; max-width: 100%;">
-
-<figcaption style="margin-top: 10px;margin-bottom: 10px; text-align: center; color: #888; font-size: 14px;">模板商城使用模板</figcaption>
-<img src="./static/MallCook-Model.gif" alt style="display: block; margin: 0 auto; max-width: 100%;">
-
-<figcaption style="margin-top: 10px;margin-bottom: 10px; text-align: center; color: #888; font-size: 14px;">JsonSchema生成器可视化构建属性面板</figcaption>
-<img src="./static/MallCook-Schema.gif" alt style="display: block; margin: 0 auto; max-width: 100%;">
-
-## 可视化搭建教程
-
-项目从被阮一峰老师推荐到技术周刊，到一天得到 200 个 star 深深的激励了我，感谢大佬们的抬爱。
-
-本着授人以鱼不如授人以渔思想，我决定在项目新建 shelf 分支，正常迭代 Mall-Cook 情况下，从零重构一套"干净"的可视化架构，同时会在掘金同步出教程文章详细讲述关键功能点，带大家一览此类平台从零到架构搭建的整个过程，谢谢大家的支持
-
-<figcaption style="margin-top: 10px;margin-bottom: 10px; text-align: center; color: #888; font-size: 14px;">Mall-Cook平台架构</figcaption>
-<img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7bf42b58cd14458c8f9d2e9dd7e1e7c2~tplv-k3u1fbpfcp-watermark.image" alt style="display: block; margin: 0 auto; max-width: 100%;">
-
-<a href="http://110.42.184.128:8090/img/1648531598010.png" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">低代码开发系列教程</a>
-
-<img src="./static/MallCook-Start.png" alt style="display: block;">
-
-## 服务端本地启动
- [传送门](./packages/mall-cook-service/README.md)
-
-## to do list
-
-- 持续业务组件开发
-- 探索平台接入 NPM 组件
-
-## 开源不易, 有了您的赞助, 我们会做的更好~
-
-  <img src="./static/donate.jpg" alt style="width: 20%;">
-
-## 技术反馈与低代码交流群
-
-- 加入低代码交流群交流
-- 获取低代码开发教程文章
-- 与作者进行相关交流
-
-<img src="./static/official.png" alt style="width: 20%;">
+## 使用说明
+将packages下的mall-cook-platform，mall-cook-template两个包覆盖你的项目即可，如有疑问可以跟我联系。

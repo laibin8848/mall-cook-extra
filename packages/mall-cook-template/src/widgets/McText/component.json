@@ -1,0 +1,52 @@
+{
+  "name": "文本",
+  "icon":"icon-biaotizujian",
+  "fields": {
+    "setting": {
+      "label": "文本配置",
+      "type": "object",
+      "child": {
+        "label": {
+          "label": "显示内容",
+          "type": "string",
+          "value": "文本"
+        },
+        "color": {
+          "label": "文本颜色",
+          "type": "color",
+          "value": "#000"
+        },
+        "fontSize": {
+          "label": "文本大小",
+          "type": "number",
+          "options": {
+            "max": 40
+          },
+          "value": "14"
+        },
+        "height": {
+          "label": "高度",
+          "type": "string",
+          "value": "80"
+        },
+        "width": {
+          "label": "宽度",
+          "type": "string",
+          "value": "80"
+        },
+        "top": {
+          "label": "坐标Top",
+          "type": "string",
+          "value": "",
+          "hide": true
+        },
+        "left": {
+          "label": "坐标Left",
+          "type": "string",
+          "value": "",
+          "hide": true
+        }
+      }
+    }
+  }
+ }

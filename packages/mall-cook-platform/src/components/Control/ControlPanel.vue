@@ -166,10 +166,19 @@ export default {
 
     // 设置选中物料
     setCurrWidget(params) {
-      let { id } = params;
-      this.control.curWidget = this.control.curPage.componentList.find(
-        (item) => id == item.id
-      );
+      let { id, pid } = params;
+      if(pid) {
+        const curWidget = this.control.curPage.componentList.find(
+          (item) => pid == item.id
+        );
+        this.control.curWidget = curWidget.components.list.find(
+          (item) => id == item.id
+        );
+      } else {
+        this.control.curWidget = this.control.curPage.componentList.find(
+          (item) => id == item.id
+        );
+      }
     },
 
     // 修改选中物料，并通知iframe，同步更新
@@ -186,6 +195,10 @@ export default {
 
     // 调用物料拖拽移动(节流)
     layerMove(e, index) {
+      //如果当前是给容器添加组件
+      if(this.control.curWidget && this.control.curWidget.component == this.globalContainerName) {
+        return;
+      }
       this.throttle(this.layerMoveFun, 1)(e, index);
     },
 

@@ -51,6 +51,8 @@ function registerComponentsSchema () {
   })
   Vue.prototype.$fields = fields
   Vue.prototype.$initializing = initializing
+  Vue.prototype.$simpleComponents = ['McText','McButton','McSimpleImg']
+  Vue.prototype.globalContainerName = 'McContainer'
 }
 
 // 初始化组件初始数据

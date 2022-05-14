@@ -1,0 +1,68 @@
+{
+ "name": "按钮",
+ "icon":"icon-shangpin-meau",
+ "fields": {
+   "setting": {
+     "label": "按钮配置",
+     "type": "object",
+     "child": {
+       "title": {
+         "label": "文本",
+         "type": "string",
+         "value": "按钮"
+       },
+       "color": {
+         "label": "文本颜色",
+         "type": "color",
+         "value": ""
+       },
+       "jumpPath": {
+         "label": "点击跳转",
+         "type": "jump",
+         "value": {}
+       },
+       "hoterea": {
+         "label": "是否热区",
+         "type": "switch",
+         "value": false,
+         "options": {
+           "trueLabel": "是",
+           "falseLabel": "否"
+         }
+       },
+       "type": {
+         "label": "类型",
+         "type": "select",
+         "data": [
+           {"label": "Primary", "value": "primary"},
+           {"label": "Error", "value": "error"},
+           {"label": "Success", "value": "success"}
+         ],
+         "value": ""
+       },
+       "height": {
+         "label": "高度",
+         "type": "string",
+         "value": "80"
+       },
+       "width": {
+         "label": "宽度",
+         "type": "string",
+         "value": "80"
+       },
+       "top": {
+         "label": "坐标Top",
+         "type": "string",
+         "value": "",
+         "hide": true
+       },
+       "left": {
+         "label": "坐标Left",
+         "type": "string",
+         "value": "",
+         "hide": true
+       }
+     }
+   }
+ }
+}

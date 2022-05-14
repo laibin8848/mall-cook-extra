@@ -6,7 +6,7 @@
  * @LastEditTime: 2022-02-12 15:08:36
 -->
 <template>
-  <div class="shape">
+  <div class="shape" @dragover="onWidgetOver" @drop="onWidgerDrop">
     <!-- 组件工具栏 -->
     <div
       v-if="data.component != 'waiting'"
@@ -42,6 +42,28 @@ export default {
   },
 
   methods: {
+    onWidgetOver(e) {
+      //如果不是自由容器，不支持插入组件
+      if(!this.control.curWidget || this.control.curWidget.component != this.globalContainerName) {
+        return;
+      }
+      e.preventDefault();
+    },
+    onWidgerDrop(e) {
+      //如果不是自由容器，不支持插入组件
+      if(this.control.curWidget.component != this.globalContainerName) {
+        return;
+      }
+      if(!this.$simpleComponents.includes(this.control.dragWidget.component)) {
+        this.$message('自由容器只支持添加文本，图片，按钮模块');
+        return;
+      }
+      const component = this.control.dragWidget;
+      component.setting.left = e.layerX - 40;
+      component.setting.top = e.layerY - 40;
+      this.control.curWidget.components.list.push(component);
+      this.control.dragstatus = false;
+    },
     // 修改选中物料
     setcurComponent() {
       this.$emit("changeCurrWidget", this.data);

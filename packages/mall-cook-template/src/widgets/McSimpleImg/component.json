@@ -1,0 +1,39 @@
+{
+ "name": "图片",
+ "icon":"icon-image",
+ "fields": {
+   "setting": {
+     "label": "图片配置",
+     "type": "object",
+     "child": {
+       "url": {
+         "label": "图片",
+         "type": "upload",
+         "value": ""
+       },
+       "height": {
+         "label": "高度",
+         "type": "string",
+         "value": "80"
+       },
+       "width": {
+         "label": "宽度",
+         "type": "string",
+         "value": "80"
+       },
+       "top": {
+         "label": "坐标Top",
+         "type": "string",
+         "value": "",
+         "hide": true
+       },
+       "left": {
+         "label": "坐标Left",
+         "type": "string",
+         "value": "",
+         "hide": true
+       }
+     }
+   }
+ }
+}

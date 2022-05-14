@@ -198,9 +198,9 @@ export default {
     },
 
     // 设置选中物料
-    setCurWidgetId(id) {
+    setCurWidgetId(id, pid = '') {
       this.curWidgetId = id;
-      window.parent.postMessage({ type: "setCurrWidget", params: { id } }, "*");
+      window.parent.postMessage({ type: "setCurrWidget", params: { id, pid } }, "*");
     },
 
     // 创建封面base64,并通知父容器
